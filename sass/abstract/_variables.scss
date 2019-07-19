@@ -1,0 +1,33 @@
+// colors
+
+// basic colors
+$color-white: #fff;
+$color-black: black;
+
+//colors used in landing page
+$color-light-green: #8dcca9;
+$color-light-green-2: #4bae77;
+$color-green: #6cc091;
+$color-light: rgba(108, 192, 145, 0.15);
+$color-input: #9a9a9a;
+
+// grid variables
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+
+// icons used
+// <i class="fas fa-car"></i>
+// <i class="fas fa-camera"></i>
+// <i class="fas fa-bug"></i>
+
+// $breakpoints
+
+$bp-largest: 75em; //1200px
+$bp-large: 59.375em; //950px
+$bp-medium: 50em; //800px
+$bp-small: 40.625em; //650px
+$bp-smallest: 28.125em; //450px

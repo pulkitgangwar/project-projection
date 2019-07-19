@@ -1,0 +1,48 @@
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  // width: 100%;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  //will give border at the right side of box
+  &__box--border {
+    padding: 0 96px;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 50px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 5rem 50px;
+    }
+
+    &:not(:last-child) {
+      border-right: 2px solid $color-white;
+      display: inline-block;
+
+      @media only screen and (max-width: $bp-small) {
+        border: none;
+      }
+    }
+  }
+
+  //special modifier for increasing the padding of the block
+  &__box--padding {
+    padding: 4rem;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: $color-green;
+    padding: 1rem;
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+}

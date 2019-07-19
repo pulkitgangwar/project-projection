@@ -1,0 +1,117 @@
+//normal menu
+//appears on devices having width more than 800px
+
+.navigation {
+  &__items {
+    list-style: none;
+  }
+
+  &__list {
+    display: inline-block;
+    padding: 2rem;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    color: $color-white;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
+
+//hamburger menu
+//appears on devices having width less than 800px
+
+.navigation {
+  &__div {
+    @media only screen and (min-width: $bp-medium) {
+      display: none;
+    }
+
+    position: relative;
+  }
+  &__slider {
+    background-color: $color-green;
+    height: 100vh;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  &__items-1 {
+    padding-top: 4rem;
+  }
+
+  &__list-1 {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  &__link-1 {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    color: $color-white;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  // hamburger icon
+
+  &__button-div {
+    height: 5rem;
+    width: 5rem;
+    // background-color: black;
+    position: relative;
+  }
+
+  &__span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.3rem;
+    width: 3rem;
+    background-color: $color-white;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1rem;
+      background-color: $color-white;
+      height: 0.3rem;
+      width: 3rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 1rem;
+      background-color: $color-white;
+      height: 0.3rem;
+      width: 3rem;
+    }
+  }
+}

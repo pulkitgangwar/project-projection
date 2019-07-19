@@ -1,0 +1,89 @@
+.large-container {
+  width: 80%;
+  margin: auto;
+
+  &--border {
+    border-bottom: 2px solid $color-white;
+  }
+}
+.flex-container {
+  &--1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-logo {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 2rem;
+
+  &--main {
+    font-weight: 700;
+  }
+}
+
+.heading-primary {
+  font-size: 5rem;
+  color: $color-white;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 400;
+  color: $color-white;
+  text-transform: capitalize;
+  padding: 1rem;
+
+  //special modifier for black color in heading
+  &--black {
+    color: $color-black !important;
+  }
+}
+
+.normal-paragraph {
+  color: $color-white;
+  padding: 1rem;
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0;
+  }
+
+  &--black {
+    color: $color-black !important;
+  }
+}
+
+// for heading display
+
+.display-none {
+  display: none;
+}
